@@ -1,0 +1,10 @@
+<h1>
+  Sou o Angular Malucao
+</h1>
+<input type="text" #abc [(ngModel)]="name" />
+<hr />
+<div>
+  {{name || 'Nada'}}
+</div>
+<h4 [ngClass]="{'text-danger':hasError,'text-success':!hasError}">Texto maluco</h4>
+<router-outlet></router-outlet>
